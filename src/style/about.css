@@ -1,0 +1,9 @@
+.about {
+  background-color: #0c070d;
+  z-index: 1;
+}
+
+.stackimgs {
+  max-width: 95px;
+  padding: 20px 5px;
+}

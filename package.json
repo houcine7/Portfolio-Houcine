@@ -1,0 +1,60 @@
+{
+  "name": "lhoreactappfirst",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blackbox-vision/react-particles": "^1.2.0",
+    "@emailjs/browser": "^3.6.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^7.2.1",
+    "glamor": "^2.20.40",
+    "jquery": "^3.6.0",
+    "particles-bg": "^2.5.5",
+    "react": "^18.2.0",
+    "react-carousel-slider": "^2.0.13",
+    "react-dom": "^18.2.0",
+    "react-flippy": "^1.1.0",
+    "react-icons": "^4.4.0",
+    "react-parallax-tilt": "^1.7.43",
+    "react-particles": "^2.2.4",
+    "react-reveal": "^1.2.2",
+    "react-rotating-text": "^1.4.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.7",
+    "react-slick": "^0.29.0",
+    "react-spinkit": "^3.0.0",
+    "react-tsparticles": "^2.2.4",
+    "react-typed": "^1.2.0",
+    "slick-slider": "^1.8.2",
+    "tsparticles": "^2.2.4",
+    "waypoints": "^4.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

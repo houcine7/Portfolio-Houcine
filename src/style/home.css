@@ -1,0 +1,82 @@
+#hero {
+  width: 100%;
+  height: 90vh;
+}
+
+/*Icons*/
+
+.fa-brands,
+.fa-solid {
+  background: aliceblue;
+  transition: all 0.2s ease-in-out;
+}
+.fa-brands::before,
+.fa-solid::before {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.fa-square-github::before {
+  color: #333;
+}
+.fa-square-github:hover {
+  color: rgba(255, 255, 255);
+  box-shadow: 0 10px 50px #333;
+}
+
+.fa-linkedin::before {
+  color: #0e76a8;
+}
+.fa-linkedin:hover {
+  color: rgba(255, 255, 255);
+  box-shadow: 0 10px 50px #0e76a8;
+}
+
+.fa-square-facebook::before {
+  color: rgb(0, 58, 99);
+}
+.fa-square-facebook:hover {
+  color: rgba(255, 255, 255);
+  box-shadow: 0 10px 50px rgb(0, 58, 99);
+}
+.fa-square-instagram::before {
+  color: #b62540;
+}
+.fa-square-instagram:hover {
+  color: rgba(255, 255, 255);
+  box-shadow: 0 10px 50px #b62540;
+}
+
+.fa-square-envelope::before {
+  color: #ea4335;
+}
+.fa-square-envelope:hover {
+  color: rgba(255, 255, 255);
+  box-shadow: 0 10px 50px #ea4335;
+}
+
+.fa-stack {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: linear-gradient(90deg, #963cff 0%, rgba(255, 0, 101, 1) 100%);
+  border: none;
+}
+.btn:hover {
+  box-shadow: 0 5px 20px #963cff;
+}
+
+.img-fluid1 {
+  position: absolute;
+  max-width: 59%;
+  transform: translate(30%, 14px);
+  z-index: 1;
+}
+
+@media screen and (max-width: 515px) {
+  .img-fluid1 {
+    max-width: 57%;
+  }
+}

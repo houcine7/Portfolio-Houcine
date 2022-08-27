@@ -1,0 +1,133 @@
+.navbar {
+  max-width: 90%;
+  margin: -10px auto;
+  padding: 1.5rem 1rem;
+  background: #0c070d;
+}
+.nav-item {
+  width: 100%;
+  text-align: center;
+}
+.nav-link {
+  border-radius: 7px;
+}
+
+.homelink:hover {
+  box-shadow: 0 2px 10px #963cff;
+  background: #963cff;
+  color: #ffffff !important;
+}
+
+.eclink {
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.eclink:hover {
+  box-shadow: 0 2px 10px #fa9277;
+  background-color: #fa9277;
+  color: #ffffff !important;
+}
+
+.xplink {
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.xplink:hover {
+  box-shadow: 0 2px 10px #7cf0f9;
+  background-color: #7cf0f9;
+  color: #ffffff !important;
+}
+
+.projectslink {
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.projectslink:hover {
+  box-shadow: 0 2px 10px #f65274;
+  background-color: #f65274;
+  color: #ffffff !important;
+}
+
+.crlink {
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.crlink:hover {
+  box-shadow: 0 1px 10px #fed578;
+  background-color: #fed578;
+  color: #ffffff !important;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.menu-icon .navicon {
+  background: linear-gradient(90deg, #963cff 0%, rgba(255, 0, 101, 1) 100%);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: linear-gradient(90deg, #963cff 0%, rgba(255, 0, 101, 1) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.menu-icon .navicon:before {
+  top: 5px;
+}
+.menu-icon .navicon:after {
+  top: -5px;
+}
+
+.handle {
+  width: 23px;
+  height: 20px;
+  background: linear-gradient(90deg, #963cff 0%, rgba(255, 0, 101, 1) 100%);
+  border-radius: 40px;
+}
+
+/* menu btn */
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+  max-height: 370px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}

@@ -1,0 +1,35 @@
+@import url("./style/nav.css");
+@import url("./style/home.css");
+@import url("./style/about.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.light {
+  color: #fff !important;
+}
+
+.dark {
+  color: rgb(15, 17, 19) !important;
+}
+
+body {
+  background: #0c070d;
+}
+
+/**/
+
+/* ---- tsparticles container ---- */
+#tsparticles {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(10, 10, 10); /* particles are white */
+}
+
+.row {
+  justify-content: center;
+  /* align-items: center; */
+}
