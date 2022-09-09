@@ -1,0 +1,75 @@
+.heading-text {
+  position: relative;
+  transform: translate(0px, -125%);
+  color: #fff;
+}
+.containersvg {
+  text-align-last: center;
+  position: relative;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.bi-code::before {
+  color: black;
+}
+
+.card-container {
+  flex: 0 50%;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(222, 7, 255, 0.2),
+    0 5px 15px 0 rgba(255, 0, 255, 0.15);
+  border-radius: 15px;
+  margin: 8px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 265px;
+  transition: 0.7s;
+}
+
+.cer-card::before,
+.card-container::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #963cff 0%, rgba(255, 0, 101, 1) 100%);
+  width: 170px;
+  height: 400px;
+  z-index: -1;
+  transform: rotate(42deg);
+  right: -56px;
+  top: -23px;
+  border-radius: 35px;
+}
+
+.cer-card:hover,
+.card-container:hover {
+  background-color: #e2cae2 !important;
+  color: #0c070d;
+  transform: scale(1.1);
+  z-index: 9;
+  border: none;
+}
+
+.cer-card {
+  max-width: 330px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.7s;
+  background: inherit;
+  box-shadow: 0 2px 4px 0 rgba(222, 7, 255, 0.2),
+    0 5px 15px 0 rgba(255, 0, 255, 0.15);
+  border-radius: 15px;
+  color: #fff;
+}

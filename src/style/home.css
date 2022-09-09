@@ -1,6 +1,6 @@
 #hero {
   width: 100%;
-  height: 90vh;
+  padding: 7.5em 0;
 }
 
 /*Icons*/
@@ -8,6 +8,7 @@
 .fa-brands,
 .fa-solid {
   background: aliceblue;
+  height: 37px;
   transition: all 0.2s ease-in-out;
 }
 .fa-brands::before,
@@ -69,14 +70,20 @@
 }
 
 .img-fluid1 {
-  position: absolute;
-  max-width: 59%;
-  transform: translate(30%, 14px);
-  z-index: 1;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 83px;
+  background-size: cover;
+  padding: 0 4% 0 6%;
 }
 
-@media screen and (max-width: 515px) {
+.myname {
+  color: #f00068 !important ;
+  font-family: FontAwesome;
+}
+
+@media screen and (max-width: 991px) {
   .img-fluid1 {
-    max-width: 57%;
+    margin-top: 40px;
   }
 }

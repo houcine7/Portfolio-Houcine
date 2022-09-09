@@ -1,10 +1,28 @@
 @import url("./style/nav.css");
 @import url("./style/home.css");
 @import url("./style/about.css");
+@import url("./style/footer.css");
+@import url("./style/Education.css");
+@import url("./style/Experience.css");
+@import url("./style/projects.css");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .light {
   color: #fff !important;
@@ -33,3 +51,5 @@ body {
   justify-content: center;
   /* align-items: center; */
 }
+
+/**/

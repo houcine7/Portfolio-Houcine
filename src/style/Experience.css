@@ -1,0 +1,40 @@
+.experince-card {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+  align-items: center;
+  background: inherit;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(222, 7, 255, 0.2),
+    0 5px 15px 0 rgba(255, 0, 255, 0.15);
+  border-radius: 15px;
+  margin: 8px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.7s;
+  background-position-x: 100%;
+}
+
+.experince-card:hover {
+  box-shadow: 0 2px 4px 0 rgb(222 7 255), 0 5px 15px 0 rgb(255 0 255);
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-logo {
+  max-width: 13%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .experince-card {
+    background-position-x: 0%;
+  }
+  .card-logo {
+    max-width: 60px;
+  }
+}

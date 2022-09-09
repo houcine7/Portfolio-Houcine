@@ -1,0 +1,22 @@
+.project-img {
+  transition: 0.8s;
+  opacity: 0.7;
+}
+
+.project-img:hover {
+  opacity: 1;
+}
+
+.projects-icons {
+  font-size: 30px;
+}
+
+.stack-project {
+  text-align: center;
+  padding: 9px 10px;
+  align-self: center;
+  color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgb(52 20 77),
+    0px 0px 10px 1px rgb(104 68 111) inset;
+}

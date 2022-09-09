@@ -1,8 +1,11 @@
 .navbar {
   max-width: 90%;
   margin: -10px auto;
-  padding: 1.5rem 1rem;
-  background: #0c070d;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 5;
 }
 .nav-item {
   width: 100%;
@@ -65,7 +68,6 @@
 .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -101,7 +103,7 @@
 .handle {
   width: 23px;
   height: 20px;
-  background: linear-gradient(90deg, #963cff 0%, rgba(255, 0, 101, 1) 100%);
+  background: linear-gradient(90deg, #ffffff 0%, rgb(4, 4, 4) 100%);
   border-radius: 40px;
 }
 

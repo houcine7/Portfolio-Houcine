@@ -3,14 +3,13 @@ import { Fade } from "react-reveal";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-function NavBar(props) {
-  const [isOn, setIsOn] = useState(false);
+function NavBar({ isLight, setIsLight }) {
   const styleSwitchMode = {
     width: "63px",
     height: "25px",
     backgroundColor: "rgba(255, 255, 255, 0.4)",
     display: "flex",
-    justifyContent: isOn ? "flex-end" : "flex-start",
+    justifyContent: isLight ? "flex-end" : "flex-start",
     borderRadius: "50px",
     padding: "10px",
     cursor: "pointer",
@@ -18,8 +17,8 @@ function NavBar(props) {
   };
 
   const toggleSwitch = () =>
-    setIsOn((prevState) => {
-      console.log(prevState);
+    setIsLight((prevState) => {
+      localStorage.setItem("theme", !prevState);
       return !prevState;
     });
   const spring = {
@@ -28,21 +27,12 @@ function NavBar(props) {
     damping: 30,
   };
 
-  // const [currTheme, setCurrTheme] = useState("light");
-
-  function changeTheme() {
-    // if (currTheme === "light") {
-    //   localStorage.setItem("theme", "dark");
-    //   setCurrTheme("dark");
-    // } else {
-    //   localStorage.setItem("theme", "light");
-    //   setCurrTheme("light");
-    // }
-  }
-
   return (
     <Fade top duration={1000} distance="20px">
-      <nav className="nav navbar navbar-expand-lg">
+      <nav
+        className="nav navbar navbar-expand-lg"
+        style={{ background: !isLight ? "#0c070d" : "#DBBDDB" }}
+      >
         <NavLink
           className="navbar-brand"
           to="#home"
@@ -51,7 +41,12 @@ function NavBar(props) {
               "linear-gradient(90deg, #963cff 0%, rgba(255, 0, 101, 1) 100%)",
           }}
         >
-          Navbar
+          <img
+            src="./imgs/logo.png"
+            alt="logo img"
+            className="navbr-brand img-fluid"
+            style={{ maxWidth: "55px" }}
+          />
         </NavLink>
 
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -68,40 +63,56 @@ function NavBar(props) {
         <div
           className="collapse navbar-collapse"
           id="navbarNav"
-          style={{ justifyContent: "center", textAlign: "-webkit-center" }}
+          style={{ justifyContent: "end", textAlign: "-webkit-center" }}
         >
           <ul
-            className="navbar-nav light"
+            className="navbar-nav "
             style={{
               display: "flex",
-              width: "60%",
+              width: "78%",
               justifyContent: "space-around",
               fontFamily: "Google Sans Regular",
               alignItems: "center",
             }}
           >
             <li className="nav-item active ">
-              <a className=" nav-link  light homelink " href="#">
+              <a
+                className=" nav-link   homelink "
+                href="/"
+                style={{ color: isLight ? "black" : "white" }}
+              >
                 Home
               </a>
             </li>
-            <li className="nav-item light ">
-              <a className="nav-link light xplink" href="#">
-                experince
+            <li className="nav-item ">
+              <a
+                className="nav-link   projectslink"
+                href="/Projects"
+                style={{ color: isLight ? "black" : "white" }}
+              >
+                Projects
+              </a>
+            </li>
+            <li
+              className="nav-item "
+              style={{ textAlign: "-webkit-match-parent" }}
+            >
+              <a
+                className=" nav-link eclink"
+                href="/Education"
+                style={{
+                  color: isLight ? "black" : "white",
+                }}
+              >
+                Education & Experinces
               </a>
             </li>
             <li className="nav-item ">
-              <a className="nav-link  light projectslink" href="#">
-                Project
-              </a>
-            </li>
-            <li className="nav-item light ">
-              <a className=" nav-link  light eclink " href="#">
-                Education
-              </a>
-            </li>
-            <li className="nav-item light">
-              <a className="light nav-link  crlink" href="#">
+              <a
+                className=" nav-link  crlink"
+                href="#"
+                style={{ color: isLight ? "black" : "white" }}
+              >
                 Contact
               </a>
             </li>
@@ -111,7 +122,12 @@ function NavBar(props) {
             style={{ ...styleSwitchMode, float: "left" }}
             onClick={toggleSwitch}
           >
-            <motion.div className="handle" layout transition={spring} />
+            <motion.div
+              className="handle"
+              layout
+              transition={spring}
+              style={{ backgroundImage: "./imgs/moon.png" }}
+            />
           </div>
         </div>
       </nav>
